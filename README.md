@@ -1,1 +1,1 @@
-# TheGalerieBrucker
+# Die Galerie Brucker
