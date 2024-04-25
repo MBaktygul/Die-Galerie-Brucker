@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Poppins';
     src: url(./font/Poppins/Poppins-Regular.ttf) format('truetype');
@@ -25,9 +26,15 @@ body {
     background-color: #1F1F1F;
     max-width: 100%;
 }
+.spacer-horizontal {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
-header, section:not(:first-of-type) {
-    margin: 0 40px;
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color: red;
 }
 a:link {
     color: #2CDB3D;
@@ -39,7 +46,6 @@ a:visited {
 a:hover {
     color: white;
 }
-
 ul {
     list-style: none;
 }
@@ -89,7 +95,7 @@ h1 {
 .hero-teaser_content {
     position: absolute;
     bottom: 40px;
-    left: 40px;
+    left:40px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -97,3 +103,51 @@ h1 {
 .hero-teaser_headline {
     margin: 0;
 }
+.hero-teaser {
+    padding-bottom: 40px;
+}
+
+.hero-teaser__inner{
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+}
+.hero-teaser__inner-text{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.line {
+    border-top: 1px solid  #2CDB3D;
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-bottom: 40px;
+}
+
+.line-no-margin {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.hero-teaser-button {
+    padding-top: 40px;
+}
+
+.newsletter {
+    background-color: #fff;
+    color: #000;
+}
+
+#hero-teaser-2 .hero-teaser_inner_info {
+    position: relative;
+}
+
+#hero-teaser-2 .hero-teaser_headline {
+    padding-bottom: 20px; 
+}
+.hero-teaser-image {
+    width: 100%;
+    padding-right: 40px;
+}
+
