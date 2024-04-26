@@ -162,8 +162,13 @@ a:hover {
 }
 
 .ausstellungen_image-1, .ausstellungen_image-2 {
+    object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+.ausstellungen-button {
+    margin-top: 80px;
 }
 
 /*newsletter*/
@@ -173,8 +178,6 @@ a:hover {
 }
 
 .newsletter_inner {
-    margin-top: 40px;
-    margin-bottom: 40px;
     display: grid;
     grid-auto-flow: column;
 }
