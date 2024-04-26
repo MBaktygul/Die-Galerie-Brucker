@@ -172,6 +172,13 @@ a:hover {
     color: #000;
 }
 
+.newsletter_inner {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-auto-flow: column;
+}
+
 /*footer*/
 .footer_header {
     margin-left: 40px;
@@ -184,3 +191,4 @@ a:hover {
     flex-direction: row;
     gap: 16px;
 }
+
