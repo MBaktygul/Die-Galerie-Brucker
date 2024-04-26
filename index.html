@@ -7,7 +7,9 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+		<!--spacer- horizontal-->
 		<div class="spacer-horizontal">
+			<!--Header-->
 			<header class="header">
 				<div class="header_top">
 					<h1>Die Galerie Brucker</h1>
@@ -30,8 +32,10 @@
 				</nav>
 			</header>
 		</div>
+		<!--main-->
 		<main>
-			<section class="hero-teaser" id="hero-teaser-1">
+			<!--hero-teaser-->
+			<section class="hero-teaser">
 				<div class="hero-teaser_inner">
 					<div class="hero-teaser-image_wrapper">
 						<img class="hero-teaser_image" src="./images/section 1/teaser_.png" />
@@ -43,35 +47,38 @@
 					</div>
 				</div>
 			</section>
+			<!--spacer- horizontal-->
 			<div class="spacer-horizontal">
-				<section class="hero-teaser" id="hero-teaser-2">
+				<section class="ausstellungen">
+					<!--divider-->
 					<div class="line"></div>
-					<div class="hero-teaser__inner">
+					<div class="ausstellungen_inner">
 						<div class="hero-teaser_inner_info">
 							<h2 class="hero-teaser_headline">
 								Kommende<br />
 								Ausstellungen
 							</h2>
+							<!--divider-->
 							<div class="line line-no-margin"></div>
-							<div class="hero-teaser_inner_content">
-								<div class="hero-teaser__inner-text">
-									<h3 class="hero-teaser_title">Die Woche großen Installationen</h3>
-									<time class="hero-teaser_time" datetime="24. Februar - 31.Februar">24. Februar - 31.Februar</time>
+							<div class="ausstellungen_inner_content">
+								<div class="ausstellungen_inner-text">
+									<h3 class="ausstellungen_title">Die Woche großen Installationen</h3>
+									<time class="ausstellungen_time" datetime="24. Februar - 31.Februar">24. Februar - 31.Februar</time>
 								</div>
-
-								<div class="hero-teaser_teaser">
-									<img class="hero-teaser-image" src="./images/section 2/teaser.png" />
+								<div class="ausstellungen_teaser">
+									<img class="ausstellungen-image" src="./images/section 2/teaser.png" />
 								</div>
 							</div>
 						</div>
-						<div class="hero-teaser_image-1">
-							<img class="hero-teaser-image" src="./images/section 2/image1.png" />
+						<div class="ausstellungen_image">
+							<img class="ausstellungen_image-1" src="./images/section 2/image1.png" />
 						</div>
-						<div class="hero-teaser_image-2">
-							<img class="hero-teaser-image" src="./images/section 2/image2.png" />
+						<div class="ausstellungen_image">
+							<img class="ausstellungen_image-2" src="./images/section 2/image2.png" />
 						</div>
 					</div>
-					<div class="hero-teaser-button"><a class="button" href="#">Mehr Info</a></div>
+					<!--button-->
+					<div class="ausstellungen-button"><a class="button" href="#">Mehr Info</a></div>
 				</section>
 				<section>
 					<div>
@@ -162,7 +169,6 @@
 						src="https://embedmaps.com/google-maps-authorization/script.js?id=43d5a0e35a4d1c0ca0ceaee22830032105911511"></script>
 				</section>
 			</div>
-
 			<section class="newsletter">
 				<div class="newsletter_inner spacer-horizontal">
 					<div class="newsletter_content">
@@ -179,17 +185,20 @@
 				</div>
 			</section>
 		</main>
+		<!--footer-->
 		<footer>
-			<h2>Die Galerie Brucker</h2>
+			<h2 class="footer_header">Die Galerie Brucker</h2>
+			<!--footer-nav-->
 			<nav>
-				<ul>
+				<ul class="footer_nav">
 					<li><a href="#">Über uns</a></li>
 					<li><a href="#">Ausstellungen</a></li>
 					<li><a href="#">Veranstaltungen</a></li>
 					<li><a href="#">Kontakt</a></li>
 				</ul>
 			</nav>
-			<ul>
+			<!--social-media-links-->
+			<ul class="social_media">
 				<li>
 					<a href="https://www.instagram.com/" target="_blank">
 						<svg width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -234,9 +243,8 @@
 								d="M12 1H9C7.67392 1 6.40215 1.52678 5.46447 2.46447C4.52678 3.40215 4 4.67392 4 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.73478 8.10536 5.48043 8.29289 5.29289C8.48043 5.10536 8.73478 5 9 5H12V1Z"
 								stroke="white"
 								stroke-linecap="round"
-								stroke-linejoin="round" />
-						</svg>
-					</a>
+								stroke-linejoin="round" /></svg
+					></a>
 				</li>
 			</ul>
 		</footer>

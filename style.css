@@ -1,4 +1,4 @@
-/*font*/
+/* font */
 @font-face {
     font-family: 'Poppins';
     src: url(./font/Poppins/Poppins-Regular.ttf) format('truetype');
@@ -39,6 +39,9 @@ h1 {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+h2 {
+    margin: 0;
+}
 
 .button {
     color: white;
@@ -68,12 +71,7 @@ h1 {
     margin-left: -40px;
     margin-right: -40px;
     margin-bottom: 40px;
-}
-
-.line-no-margin {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 30px;
+    margin-top: 40px;
 }
 
 /* links */
@@ -117,13 +115,14 @@ a:hover {
     margin: 0;
 }
 
-/*hero-teaser-1*/
-.hero-teaser_image {
-    width: 100%;
-}
-
+/* hero-teaser */
 .hero-teaser_inner {
     position: relative;
+}
+
+.hero-teaser_image {
+    width: 100%;
+    height: 100%;
 }
 
 .hero-teaser_content {
@@ -135,44 +134,53 @@ a:hover {
     gap: 16px;
 }
 
-.hero-teaser_headline {
-    margin: 0;
+.hero-teaser-button {
+    padding-top: 40px;
 }
 
-.hero-teaser {
-    padding-bottom: 40px;
-}
-
-.hero-teaser__inner{
+/*ausstellungen*/
+.ausstellungen_inner{
     display: flex;
-    align-items: flex-end;
     gap: 40px;
 }
 
-.hero-teaser__inner-text{
+.line-no-margin {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.ausstellungen_inner_content {
+    position: relative;
+}
+
+.ausstellungen_inner-text{
     position: absolute;
     bottom: 40px;
     left: 40px;
 }
 
-.hero-teaser-button {
-    padding-top: 40px;
+.ausstellungen_image-1, .ausstellungen_image-2 {
+    height: 100%;
+    width: 100%;
 }
 
+/*newsletter*/
 .newsletter {
     background-color: #fff;
     color: #000;
 }
 
-#hero-teaser-2 .hero-teaser_inner_info {
-    position: relative;
+/*footer*/
+.footer_header {
+    margin-left: 40px;
+    margin-top: 40px;
 }
 
-#hero-teaser-2 .hero-teaser_headline {
-    padding-bottom: 20px; 
+.social_media {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
 }
-.hero-teaser-image {
-    width: 100%;
-    padding-right: 40px;
-}
-
