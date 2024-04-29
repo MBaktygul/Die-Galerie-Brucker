@@ -46,7 +46,7 @@ h2 {
 .button {
     color: white;
     background-color: #2CDB3D;
-    padding: 12px 27px;
+    padding: 16px 30px;
     display: inline-block;
 }
 
@@ -177,6 +177,8 @@ a:hover {
 .newsletter {
     background-color: #fff;
     color: #000;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .newsletter_inner {
@@ -195,6 +197,35 @@ a:hover {
     align-items: left;
 }
 
+.subscribe {
+    margin-top: 20px;
+}
+.newsletter_subscription {
+    margin-bottom: 20px;
+}
+
+.subscribe input {
+    text-align: left;
+    font-size: 1rem;
+    border: 1px solid #1F1F1F;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 400px;
+    padding-left: 16px;
+}
+
+.subscribe button {
+    background-color: #2CDB3D;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+
 /*footer*/
 .footer_header {
     margin-left: 40px;
@@ -205,6 +236,7 @@ a:hover {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    align-items: center;
     gap: 16px;
 }
 
