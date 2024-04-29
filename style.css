@@ -44,7 +44,7 @@ h2 {
 }
 
 .button {
-    font-family: 'Poppins';
+    font-family: inherit;
     font-weight: 600;
     color: white;
     background-color: #2CDB3D;
@@ -180,6 +180,26 @@ a:hover {
     margin-top: 40px;
 }
 
+
+
+/*map*/
+.map {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 60% auto;
+    gap: 40px;
+}
+
+.map_map {
+    margin-right: 40px;
+}
+
+.map_information {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 /*newsletter*/
 .newsletter {
     background-color: #fff;
@@ -235,6 +255,8 @@ a:hover {
 }
 
 .submit {
+    font-family: inherit;
+    font-size: inherit;
     font-weight: 400;
     color: white;
     background-color:#2CDB3D;
