@@ -185,13 +185,10 @@ a:hover {
 /*map*/
 .map {
     margin-top: 40px;
+    margin-bottom: 40px;
     display: grid;
-    grid-template-columns: 60% auto;
+    grid-template-columns: 40% auto;
     gap: 40px;
-}
-
-.map_map {
-    margin-right: 40px;
 }
 
 .map_information {
@@ -204,8 +201,8 @@ a:hover {
 .newsletter {
     background-color: #fff;
     color: #000;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .newsletter_inner {
@@ -260,6 +257,7 @@ a:hover {
     font-weight: 400;
     color: white;
     background-color:#2CDB3D;
+    cursor: pointer;
 }
 
 
