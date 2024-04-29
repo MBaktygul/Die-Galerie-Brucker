@@ -184,7 +184,6 @@ a:hover {
 
 /*map*/
 .map {
-    margin-top: 40px;
     margin-bottom: 40px;
     display: grid;
     grid-template-columns: 40% auto;
@@ -195,6 +194,35 @@ a:hover {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+}
+
+.map_heading {
+    margin-block-start: auto;
+    margin-bottom: 0;
+}
+
+.address {
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+table {
+    display: inline-block;
+    margin-bottom: 40px; 
+}
+
+td {
+    padding-right: 80px;
+}
+
+iframe {
+    height: -webkit-fill-available;
+}
+
+.call {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 /*newsletter*/
