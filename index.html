@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Die Galerie Brucker</title>
+		<!--style-->
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -49,6 +50,7 @@
 			</section>
 			<!--spacer- horizontal-->
 			<div class="spacer-horizontal">
+				<!--exhibition-->
 				<section class="exhibition">
 					<!--divider-->
 					<div class="line"></div>
@@ -58,7 +60,7 @@
 								Kommende<br />
 								Ausstellungen
 							</h2>
-							<!--divider-->
+							<!--line-no-margin-->
 							<div class="line line-no-margin"></div>
 							<div class="exhibition_inner_content">
 								<div class="exhibition_inner-text">
@@ -80,14 +82,29 @@
 					<!--button-->
 					<div class="exhibition-button"><a class="button" href="#">Mehr Info</a></div>
 				</section>
-				<section>
-					<div>
-						<h2>Kommende Veranstaltungen</h2>
-						<p>Du kannst an einer unserer Veranstaltungen teilnehmen und Teil unserer Gemeinschaft werden!</p>
-						<a href="#"></a>
+				<!--divider-->
+				<div class="line"></div>
+				<!--event-->
+				<section class="event">
+					<div class="event_inner">
+						<div class="event_inner_info">
+							<h2>
+								Kommende<br />
+								Veranstaltungen
+							</h2>
+							<!--line-no-margin-->
+							<div class="line line-no-margin"></div>
+							<p>
+								Du kannst an einer unserer<br />
+								Veranstaltungen <br />teilnehmen und Teil<br />
+								unserer Gemeinschaft<br />
+								werden!
+							</p>
+						</div>
+						<div class="exhibition-button"><a class="button" href="#">Mehr Info</a></div>
 					</div>
-					<div>
-						<div>
+					<div class="event_date">
+						<div class="event_date_info">
 							<span>Kunstgespräch</span>
 							<time datetime="1. März">1. März</time>
 						</div>
@@ -104,13 +121,17 @@
 							<time datetime="1. März">1. März</time>
 						</div>
 					</div>
-					<img src="./images/section 3/people.png" />
+					<div class="event_image_wrapper">
+						<img class="event_image" src="./images/section 3/people.png" />
+					</div>
 				</section>
 				<!--divider-->
 				<div class="line"></div>
+				<!--map-->
 				<section class="map">
 					<div class="map_information">
 						<h2 class="map_heading">Standort und Öffnungszeiten</h2>
+						<!--line-no-margin-->
 						<div class="line line-no-margin"></div>
 						<p class="address">
 							Breite straße 41 B <br />
@@ -167,6 +188,7 @@
 						referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</section>
 			</div>
+			<!--newsletter-->
 			<section class="newsletter">
 				<div class="newsletter_inner spacer-horizontal">
 					<div class="newsletter_content">

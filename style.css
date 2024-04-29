@@ -152,7 +152,7 @@ a:hover {
 .line-no-margin {
     margin-right: 0;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .exhibition_inner_content {
@@ -180,7 +180,41 @@ a:hover {
     margin-top: 40px;
 }
 
+/*event*/
+.event {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    gap: 40px;
+    align-items: center;
+}
 
+.event_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.event_date {
+    background-color: white;
+    color: #1F1F1F;
+    width: 100%;
+    padding: 40px;
+}
+
+.event_date_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #2CDB3D;
+
+}
+
+.event_image {
+    display: block;
+    width: 100%;
+}
 
 /*map*/
 .map {
