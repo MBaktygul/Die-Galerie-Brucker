@@ -76,16 +76,16 @@ h2 {
 
 /* links */
 a:link {
-    color: #2CDB3D;
+    color: white;
     text-decoration: none;
 }
 
 a:visited {
-    color: #2CDB3D;
+    color: white;
 }
 
 a:hover {
-    color: white;
+    color: #2CDB3D;
 }
 
 /* header */
@@ -134,41 +134,43 @@ a:hover {
     gap: 16px;
 }
 
-.hero-teaser-button {
-    padding-top: 40px;
-}
-
-/*ausstellungen*/
-.ausstellungen_inner{
-    display: flex;
+/*exhibition*/
+.exhibition_inner {
+    display: grid;
+    grid-template-columns: auto 25% 25%;
     gap: 40px;
-}
+    align-items: end;
+  }
 
 .line-no-margin {
-    margin-left: 0;
     margin-right: 0;
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
-.ausstellungen_inner_content {
+.exhibition_inner_content {
     position: relative;
 }
 
-.ausstellungen_inner-text{
+.exhibition_inner-text{
     position: absolute;
     bottom: 40px;
     left: 40px;
 }
 
-.ausstellungen_image-1, .ausstellungen_image-2 {
-    object-fit: cover;
+.exhibition_item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
+  }
+  .exhibition-image {
+    display: block;
     width: 100%;
-}
+  }
 
-.ausstellungen-button {
-    margin-top: 80px;
+.exhibition-button {
+    margin-top: 40px;
 }
 
 /*newsletter*/
@@ -179,7 +181,18 @@ a:hover {
 
 .newsletter_inner {
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.newsletter_image {
+    display: block;
+    width: 100%;
+}
+.newsletter_content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
 }
 
 /*footer*/
