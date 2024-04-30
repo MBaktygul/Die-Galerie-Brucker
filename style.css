@@ -190,9 +190,9 @@ a:hover {
 /*event*/
 .event {
     display: grid;
-    grid-template-columns: 25% 25% 45%;
+    grid-template-columns: 1fr 1fr 2fr;
     gap: 40px;
-    align-items: center;
+    align-items: end;
 }
 
 .event_inner {
@@ -206,15 +206,27 @@ a:hover {
     background-color: white;
     color: #1F1F1F;
     height: 100%;
+    width: 100%;
+}
+
+.event_date-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    margin: 0;
 }
 
 .event_date_info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     border-left: 1px solid #2CDB3D;
-    margin: 40px;
+}
+
+.event_date_info_name {
+    font-weight: 600;
 }
 
 .event_image {
