@@ -171,9 +171,16 @@ a:hover {
     justify-content: space-between;
     height: 100%;
   }
+
+  .exhibition-image_ {
+    display: block;
+    width: 100%;
+  }
+
   .exhibition-image {
     display: block;
     width: 100%;
+    opacity: 30%;
   }
 
 .exhibition-button {
@@ -183,7 +190,7 @@ a:hover {
 /*event*/
 .event {
     display: grid;
-    grid-template-columns: 25% 25% 50%;
+    grid-template-columns: 25% 25% 45%;
     gap: 40px;
     align-items: center;
 }
@@ -198,8 +205,7 @@ a:hover {
 .event_date {
     background-color: white;
     color: #1F1F1F;
-    width: 100%;
-    padding: 40px;
+    height: 100%;
 }
 
 .event_date_info {
@@ -207,8 +213,8 @@ a:hover {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    border: 1px solid #2CDB3D;
-
+    border-left: 1px solid #2CDB3D;
+    margin: 40px;
 }
 
 .event_image {
