@@ -17,6 +17,9 @@
     font-style: medium;
     font-weight: 500;
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 /* global */
 body {
@@ -98,6 +101,10 @@ a:hover {
 /* header */
 .header {
     padding-bottom: 40px;
+
+}
+h1 a:hover {
+    color: white;
 }
 
 .header_top {
@@ -369,4 +376,3 @@ iframe {
     align-items: center;
     gap: 16px;
 }
-
