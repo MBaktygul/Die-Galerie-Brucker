@@ -376,3 +376,7 @@ iframe {
     align-items: center;
     gap: 16px;
 }
+
+.footer_header a:hover {
+    color: white;
+}
