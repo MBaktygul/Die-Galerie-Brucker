@@ -339,11 +339,13 @@ h1 a:hover {
 
 .arrow-container {
     position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    gap: 40px;
 }
 
 .arrow {
-    width: 0;
-    height: 0;
     cursor: pointer;
     font-size: 50px;
     font-weight: 200;
@@ -360,6 +362,15 @@ h1 a:hover {
     grid-template-columns: 1fr 1fr 2fr;
     gap: 40px;
     align-items: end;
+}
+
+@media (max-width: 768px) {
+    .event {
+        display: grid;
+        grid-template-columns: 1fr; /* Stacks items in a single column */
+        grid-template-rows: repeat(3, auto); /* Creates rows as needed */
+        gap: 40px; /* Adjust gap for smaller screens */
+    }
 }
 
 .event_inner {
@@ -523,7 +534,6 @@ iframe {
 .subscribe {
     display: flex;
     width: 100%;
-    margin-top: 20px;
 }
 
 .newsletter_subscription {
