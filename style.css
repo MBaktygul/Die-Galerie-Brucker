@@ -1,6 +1,13 @@
 /* font */
 @font-face {
     font-family: 'Poppins';
+    src: url(./font/Poppins/Poppins-Thin.ttf) format('truetype');
+    font-style: thin;
+    font-weight: 200;
+  } 
+
+@font-face {
+    font-family: 'Poppins';
     src: url(./font/Poppins/Poppins-Light.ttf) format('truetype');
     font-style: light;
     font-weight: 300;
@@ -227,7 +234,7 @@ h1 a:hover {
 
 }
 
-/* hero-teaser */
+/* hero__teaser */
 .hero-teaser_inner {
     position: relative;
 }
@@ -265,22 +272,39 @@ h1 a:hover {
 }
 
 @media (max-width: 768px){
-    .hero-teaser-button {
+    .hero-teaser_button {
         margin-top: 16px;
     }
 }
 
 /*exhibition*/
+.exhibition_headline {
+    margin-bottom: 40px;
+}
+
+.exhibition__wrapper {
+    position: relative;
+}
+
 .exhibition_inner {
-    display: grid;
-    grid-template-columns: auto 25% 25%;
+    display: flex;
     gap: 40px;
-    align-items: end;
   }
 
   @media (max-width: 768px){
     .exhibition_inner {
-        grid-template-rows: 1fr;
+        display: block;
+    }                               
+} 
+
+.exhibition_items {
+    display: flex;
+    gap: 40px;
+}
+
+@media (max-width: 768px){
+    .exhibition_items {
+        display: none;
     }                               
 } 
 
@@ -290,7 +314,7 @@ h1 a:hover {
     margin-bottom: 20px;
 }
 
-.exhibition_inner_content {
+.exhibition_inner-content {
     position: relative;
 }
 
@@ -300,20 +324,12 @@ h1 a:hover {
     left: 40px;
 }
 
-.exhibition_item1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    gap: 40px;
-  }
-
-  .exhibition-image_ {
+.exhibition-image_ {
     display: block;
     width: 100%;
   }
 
-  .exhibition-image {
+.exhibition-image {
     display: block;
     width: 100%;
     opacity: 30%;
@@ -321,25 +337,18 @@ h1 a:hover {
     object-fit: cover;
   }
 
-  .arrow {
+.arrow-container {
+    position: absolute;
+}
+
+.arrow {
     width: 0;
     height: 0;
-    border-style: solid;
     cursor: pointer;
     font-size: 50px;
     font-weight: 200;
 }
 
-.left {
-
-    border-width: 15px 20px 15px 0;
-    border-color: transparent white transparent transparent;
-}
-
-.right {
-    border-width: 15px 0 15px 20px;
-    border-color: transparent transparent transparent white;
-}
 
 .exhibition-button {
     margin-top: 40px;
