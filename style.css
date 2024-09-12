@@ -292,7 +292,7 @@ h1 a:hover {
     justify-content: space-between;
   }
 
-  @media (max-width: 768px){
+@media (max-width: 768px){
     .exhibition_inner {
         display: block;
     }                               
@@ -313,6 +313,12 @@ h1 a:hover {
     bottom: 40px;
     left: 40px;
 }
+
+@media (max-width: 768px){
+    .exhibition_inner-text {
+        position: static;
+    }                               
+} 
 
 .exhibition-image_ {
     display: block;
