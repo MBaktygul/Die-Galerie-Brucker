@@ -5,7 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Die Galerie Brucker</title>
 		<!--style-->
+		<script src="./glide.min.js"></script>
+		<script>
+			Glide('.glide').mount();
+		</script>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="/glide-vanilla/glide.core.min.css" />
+		<link rel="stylesheet" href="/glide-vanilla/glide.min.js" />
 	</head>
 	<body>
 		<!--spacer- horizontal-->
@@ -66,29 +72,31 @@
 						Kommende<br />
 						Ausstellungen
 					</h2>
-					<div class="exhibition__wrapper">
-						<div class="exhibition_inner">
-							<div class="exhibition_item1">
-								<div class="exhibition_inner-content">
-									<div class="exhibition_teaser">
-										<img class="exhibition-image_" src="./images/section 2/teaser.png" alt="bottles hanging from the roof" />
+					<div class="glide">
+						<div class="glide__track" data-glide-el="track">
+							<ul class="glide__slides exhibition__slider">
+								<li class="exhibition_item1">
+									<div class="exhibition_inner-content">
+										<div class="exhibition_teaser">
+											<img class="exhibition-image_" src="./images/section 2/teaser.png" alt="bottles hanging from the roof" />
+										</div>
+										<div class="exhibition_inner-text">
+											<h3 class="exhibition_title">Die Woche großen Installationen</h3>
+											<time class="exhibition_time" datetime="24. Februar - 31.Februar">24. Februar - 31.Februar</time>
+										</div>
 									</div>
-									<div class="exhibition_inner-text">
-										<h3 class="exhibition_title">Die Woche großen Installationen</h3>
-										<time class="exhibition_time" datetime="24. Februar - 31.Februar">24. Februar - 31.Februar</time>
-									</div>
-								</div>
-							</div>
-							<div class="exhibition_item2">
-								<img class="exhibition-image" src="./images/section 2/image1.png" alt="greek man sculpture" />
-							</div>
-							<div class="exhibition_item3">
-								<img class="exhibition-image" src="./images/section 2/image2.png" alt="woman in a maze of light bulbs" />
-							</div>
+								</li>
+								<li class="exhibition_item2">
+									<img class="exhibition-image" src="./images/section 2/image1.png" alt="greek man sculpture" />
+								</li>
+								<li class="exhibition_item3">
+									<img class="exhibition-image" src="./images/section 2/image2.png" alt="woman in a maze of light bulbs" />
+								</li>
+							</ul>
 						</div>
-						<div class="arrow-container">
-							<div class="arrow right">></div>
-							<div class="arrow left"><</div>
+						<div class="glide__arrows" data-glide-el="controls">
+							<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-arrow-right"></i>></button>
+							<button class="glide__arrow glide__arrow--right" data-glide-dir="<"><i class="fas fa-arrow-right"></i><</button>
 						</div>
 					</div>
 					<!--button-->
