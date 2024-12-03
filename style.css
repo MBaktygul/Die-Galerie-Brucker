@@ -22,15 +22,16 @@
 
 @font-face {
 	font-family: 'Poppins';
-	src: url('./font/Poppins/Poppins-SemiBold.ttf') format('truetype');
-	font-style: semibold;
-	font-weight: 600;
-}
-@font-face {
-	font-family: 'Poppins';
 	src: url(./font/Poppins/Poppins-Medium.ttf) format('truetype');
 	font-style: medium;
 	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('./font/Poppins/Poppins-SemiBold.ttf') format('truetype');
+	font-style: semibold;
+	font-weight: 600;
 }
 
 html {
@@ -296,10 +297,10 @@ h1 a:hover {
 .exhibition_inner-content {
 	position: relative;
 }
-
+/* 
 .exhibition_item1 {
 	flex-grow: 1;
-}
+} */
 
 .exhibition_inner-text {
 	position: absolute;
@@ -314,6 +315,15 @@ h1 a:hover {
 	}
 }
 
+.glide__slide {
+	opacity: 0.5;
+}
+
+.glide__slide--active {
+	opacity: 1;
+	position: relative;
+}
+
 .glide__slide--active .exhibition_inner-text {
 	opacity: 1;
 }
@@ -323,35 +333,17 @@ h1 a:hover {
 	width: 100%;
 }
 
-.exhibition-image {
-	display: block;
-	width: 100%;
-	opacity: 30%;
-	object-fit: cover;
-	height: 100%;
-}
-
 .glide__arrows {
-	margin-top: 20px;
-	width: 60px;
-	margin-left: 18%;
-	display: flex;
-	justify-content: space-evenly;
-	flex-direction: row-reverse;
-	gap: 40px;
-}
-
-@media (max-width: 768px) {
-	.glide__arrows {
-		margin-left: auto;
-		margin-right: auto;
-	}
+	position: absolute;
+	padding-top: 15px;
 }
 
 .glide__arrow {
+	font-family: 'Poppins';
 	cursor: pointer;
-	font-size: 50px;
+	font-size: 30px;
 	font-weight: 200;
+	letter-spacing: 20px;
 	background-color: transparent;
 	color: inherit;
 	border: 0;
