@@ -287,18 +287,6 @@ h1 a:hover {
 	position: relative;
 }
 
-.glide {
-	display: flex;
-	gap: 40px;
-	justify-content: space-between;
-}
-
-@media (max-width: 768px) {
-	.glide {
-		display: block;
-	}
-}
-
 .line-no-margin {
 	margin-right: 0;
 	margin-top: 20px;
@@ -317,12 +305,17 @@ h1 a:hover {
 	position: absolute;
 	bottom: 40px;
 	left: 40px;
+	opacity: 0;
 }
 
 @media (max-width: 768px) {
 	.exhibition_inner-text {
 		position: static;
 	}
+}
+
+.glide__slide--active .exhibition_inner-text {
+	opacity: 1;
 }
 
 .exhibition-image_ {
@@ -339,17 +332,19 @@ h1 a:hover {
 }
 
 .glide__arrows {
-	position: absolute;
+	margin-top: 20px;
+	width: 60px;
+	margin-left: 18%;
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: row-reverse;
 	gap: 40px;
-	left: 18%;
 }
 
 @media (max-width: 768px) {
 	.glide__arrows {
-		left: 45%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -357,6 +352,9 @@ h1 a:hover {
 	cursor: pointer;
 	font-size: 50px;
 	font-weight: 200;
+	background-color: transparent;
+	color: inherit;
+	border: 0;
 }
 
 .exhibition-button {
